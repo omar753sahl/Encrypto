@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    //Master branch
+    //Encrypto-v1.0 branch
 
     public static void main(String[] args) {
         launch(args);
