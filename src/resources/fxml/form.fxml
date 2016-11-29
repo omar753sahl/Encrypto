@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<GridPane prefHeight="320.0" prefWidth="443.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.os.FormController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="105.0" minHeight="70.0" prefHeight="93.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="185.0" minHeight="10.0" prefHeight="85.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <GridPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="119.0" prefWidth="443.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="101.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="520.0" minWidth="10.0" prefWidth="342.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <StackPane style="-fx-background-color: #ffffff;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Username:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Password:">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+               </children>
+            </StackPane>
+            <TextField fx:id="usernameTextField" promptText="Enter your username..." GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </TextField>
+            <PasswordField fx:id="passwordTextField" promptText="Enter your password..." GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="20.0" />
+               </GridPane.margin>
+            </PasswordField>
+         </children>
+      </GridPane>
+      <StackPane prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="64.0" fitWidth="225.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Encrypto%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </StackPane>
+      <GridPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="3">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="130.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="313.0" minWidth="10.0" prefWidth="313.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="38.0" minHeight="23.0" prefHeight="38.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="53.0" minHeight="30.0" prefHeight="37.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="17.0" prefWidth="181.0" text="Encrypted Password:" textFill="#393939" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="encryptedPasswordLabel" contentDisplay="CENTER" prefHeight="20.0" prefWidth="253.0" text="Encrypted password will appear here..." textAlignment="CENTER" textFill="#00c468" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" right="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="17.0" prefWidth="182.0" text="Your Password:" textFill="#393939">
+               <GridPane.margin>
+                  <Insets left="15.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="yourPasswordLabel" prefHeight="20.0" prefWidth="242.0" text="Your password will appear here..." textFill="#ff0056" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="15.0" right="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <StackPane style="-fx-background-color: #ffffff;" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="encryptButton" mnemonicParsing="false" onAction="#encrypt" prefHeight="25.0" prefWidth="122.0" text="DO YOUR MAGIC!" />
+         </children>
+      </StackPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" />
+   </padding>
+</GridPane>
