@@ -25,7 +25,7 @@ public class Main extends Application {
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            ErrorHandler.showErrorDialog(ErrorHandler.DEAFAULT_MESSAGE, e.getMessage());
+            ErrorHandler.showErrorDialog(ErrorHandler.DEFAULT_MESSAGE, e.getMessage());
         }
     }
 }

@@ -4,7 +4,7 @@ import javafx.scene.control.Alert;
 
 public class ErrorHandler {
 
-    public static final String DEAFAULT_MESSAGE = "Something went wrong...";
+    public static final String DEFAULT_MESSAGE = "Something went wrong...";
 
     public static void showErrorDialog(String header, String message){
 

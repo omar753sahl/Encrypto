@@ -96,7 +96,7 @@ public class FormController implements Initializable {
 
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
-            ErrorHandler.showErrorDialog(ErrorHandler.DEAFAULT_MESSAGE, e.getMessage());
+            ErrorHandler.showErrorDialog(ErrorHandler.DEFAULT_MESSAGE, e.getMessage());
         }
 
         if (sb != null) {
