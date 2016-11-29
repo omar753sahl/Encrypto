@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -19,8 +20,9 @@ public class Main extends Application {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/resources/fxml/form.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("Encrypto");
             primaryStage.setScene(scene);
+            primaryStage.setTitle("Encrypto");
+            primaryStage.getIcons().add(new Image(getClass().getResource("/resources/Encrypto logo-01.png").toString()));
             primaryStage.setResizable(false);
             primaryStage.show();
         } catch (IOException e) {

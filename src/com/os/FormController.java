@@ -49,6 +49,7 @@ public class FormController implements Initializable {
         };
 
         encryptButton.disableProperty().bind(emptyTextFields);
+        encryptButton.setDefaultButton(true);
     }
 
 
