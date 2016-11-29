@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Main extends Application {
 
     //Encrypto-v1.0 branch
-
+    //Another comment for testing pull requests
     public static void main(String[] args) {
         launch(args);
     }
