@@ -10,8 +10,6 @@ import java.io.IOException;
 
 public class Main extends Application {
 
-    //Master branch
-
     public static void main(String[] args) {
         launch(args);
     }
@@ -27,7 +25,7 @@ public class Main extends Application {
             primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
-            ErrorHandler.showErrorDialog("Something went wrong!", e.getMessage());
+            ErrorHandler.showErrorDialog(ErrorHandler.DEFAULT_MESSAGE, e.getMessage());
         }
     }
 }

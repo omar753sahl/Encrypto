@@ -1,11 +1,10 @@
 package com.os;
 
 import javafx.scene.control.Alert;
-import javafx.scene.control.Dialog;
-
-import java.util.Optional;
 
 public class ErrorHandler {
+
+    public static final String DEFAULT_MESSAGE = "Something went wrong...";
 
     public static void showErrorDialog(String header, String message){
 
